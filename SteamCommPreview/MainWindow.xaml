@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SteamCommPreview"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Width="960" Height="640">
     <Grid>
-        
+        <CheckBox x:Name="RealtimeCHKB" Content="实时更新" Margin="224,13,628,597" Checked="CheckBox_Checked_1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="209"/>
+        <Slider Margin="337,13,524,594"/>
+        <TextBox Text="TextBox" TextWrapping="Wrap" Margin="10,36,524,10"/>
+        <WebBrowser Margin="441,10,10,10"/>
     </Grid>
 </Window>
