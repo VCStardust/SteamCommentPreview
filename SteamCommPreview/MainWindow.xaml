@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Width="960" Height="640">
     <Grid>
-        <CheckBox x:Name="RealtimeCHKB" Content="实时更新" Margin="224,10,628,594" Checked="CheckBox_Checked_1" FontSize="16"/>
-        <ComboBox x:Name="ModeSwitchCB" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="209"/>
-        <Slider x:Name="RFRateCtrlSli" Margin="337,13,524,594"/>
+        <CheckBox x:Name="RealtimeCHKB" Margin="215,12,604,593" FontSize="16"/>
+        <ComboBox x:Name="ModeSwitchCB" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False"/>
+        <Slider x:Name="RFRateCtrlSli" Margin="361,13,524,594" ValueChanged="RFRateCtrlSli_ValueChanged"/>
         <TextBox x:Name="InputTextB" Text="TextBox" TextWrapping="Wrap" Margin="10,36,524,10"/>
         <Frame x:Name="OutputFrame" Content="Frame" Margin="441,10,10,10"/>
     </Grid>
