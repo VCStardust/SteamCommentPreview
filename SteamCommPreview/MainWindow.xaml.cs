@@ -23,11 +23,12 @@ namespace SteamCommPreview
         public MainWindow()
         {
             InitializeComponent();
+            RealtimeCHKB.Content = "实时更新(" + RFRateCtrlSli.Value + "ms)";
         }
 
         private void RFRateCtrlSli_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            RealtimeCHKB.Content = "实时更新(" + RFRateCtrlSli.Value + "ms)";
+           
         }
     }
 }
