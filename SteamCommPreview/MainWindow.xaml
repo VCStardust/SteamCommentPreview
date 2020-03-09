@@ -7,10 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Width="960" Height="640">
     <Grid>
-        <CheckBox x:Name="RealtimeCHKB" Margin="215,12,604,593" FontSize="16"/>
-        <ComboBox x:Name="ModeSwitchCB" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False"/>
-        <Slider x:Name="RFRateCtrlSli" Margin="361,13,524,594" ValueChanged="RFRateCtrlSli_ValueChanged" Maximum="120" Minimum="1" Value="60" Ticks="1,2,5,10,15,20,30,45,60,90,120"/>
+        <ComboBox x:Name="ModeSwitchCB" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="265" IsEnabled="False"/>
         <TextBox x:Name="InputTextB" Text="TextBox" TextWrapping="Wrap" Margin="10,36,524,10"/>
-        <Frame x:Name="OutputFrame" Content="Frame" Margin="441,10,10,10"/>
+        <Frame x:Name="OutputFrame" Content="Frame" Margin="433,10,10,10" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="AutoRefreshCB" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="280,10,0,0">
+            <ComboBoxItem Content="∞(手动)" HorizontalAlignment="Left" Width="76"/>
+            <ComboBoxItem Content="5s" HorizontalAlignment="Left" Width="76"/>
+            <ComboBoxItem Content="15s" HorizontalAlignment="Left" Width="76"/>
+            <ComboBoxItem Content="30s" HorizontalAlignment="Left" Width="76"/>
+            <ComboBoxItem Content="60s" HorizontalAlignment="Left" Width="76"/>
+        </ComboBox>
+        <Button Content="刷新" Margin="363,10,524,570"/>
     </Grid>
 </Window>
